@@ -5,7 +5,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/ML_Statistical_Inference_in_Finance/',
   plugins: [inspectAttr(), react()],
   server: {
     port: 3000,
