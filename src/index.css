@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 9% 31%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 7% 46%;
+    --muted-foreground: 210 7% 46%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 6 78% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 14% 89%;
+    --input: 210 14% 89%;
+    --ring: 0 0% 0%;
+    --radius: 0px;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-black antialiased;
+    font-family: 'Quattrocento Sans', 'Source Sans Pro', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oranienbaum', 'Source Serif Pro', serif;
+  }
+}
+
+@layer components {
+  .font-serif-display {
+    font-family: 'Oranienbaum', 'Source Serif Pro', serif;
+  }
+
+  .font-sans-body {
+    font-family: 'Quattrocento Sans', 'Source Sans Pro', sans-serif;
+  }
+
+  .grid-bg {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .label-tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6c757d;
+    font-family: 'Quattrocento Sans', sans-serif;
+  }
+
+  .stat-box {
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .stat-label {
+    display: block;
+    font-size: 0.6875rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-value {
+    font-family: 'Oranienbaum', serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .step-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-family: 'Oranienbaum', serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+  }
+
+  .top-line {
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    right: 60px;
+    height: 2px;
+    background: #000;
+  }
+
+  .slide-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 60px 60px 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}
